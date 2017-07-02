@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Git API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">API EXPERIMENT (GITHUB)</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right" id="search-form" role="search">
+                    <div class="form-group">
+                        <input type="text" id="search-user" class="form-control" placeholder="Enter Username">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="error col-sm-12">
+        <div class="alert alert-dismissible alert-danger">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Error: </strong><span id="errorStatus"> </span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="profile-info">
+                    <div class="col-sm-12">
+                        <img class="img-responsive" id="git-avatar" src="">
+                        <h4 class="text-center" id="git-username">User</h4>
+                        <h5 class="text-center" id="git-bio"></h5>
+                    </div>
+                    <div class="col-sm-12">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge" id="git-followers">0</span>
+                                Followers
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge" id="git-following">0</span>
+                                Following
+                            </li>
+                            <li class="list-group-item">
+                                Location <span id="git-loc"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">Repositories</a></li>
+                    <li><a href="#" id="reset">Reset</a></li>
+                </ul>
+                <div id="repo-list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    </html>

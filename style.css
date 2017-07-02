@@ -1,0 +1,15 @@
+.container {
+	display: none;
+}
+
+.error {
+	display: none;
+}
+
+#repo-list {
+	margin-top: 20px;
+}
+
+#git-loc {
+	float: right;
+}
